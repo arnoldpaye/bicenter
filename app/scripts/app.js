@@ -12,11 +12,15 @@ var bicenterApp = angular.module('bicenterApp', ['ngRoute']);
 
 bicenterApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-  when('/sample', {
-    templateUrl: 'views/partials/sample.html',
-    controller: 'MainController'
+  when('/', {
+    templateUrl: 'views/partials/dashboard.html',
+    controller: 'DashboardController'
+  }).
+  when('/products', {
+    templateUrl: 'views/partials/products.html',
+    controller: 'ProductController'
   }).
   otherwise({
-    redirectTo: '/sample'
+    redirectTo: '/'
   });
 }]);

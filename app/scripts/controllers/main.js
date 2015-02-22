@@ -2,11 +2,22 @@
 
 /**
  * @ngdoc function
- * @name bicenterApp.controller:MainController
+ * @name bicenterApp.controller:DashboardController
  * @description
- * # MainController
+ * # DashboardController
  * Controller of the bicenterApp
  */
-angular.module('bicenterApp').controller('MainController' ['$scope', '$http', function($scope, $http) {
+angular.module('bicenterApp').controller('DashboardController' [function() {
+
+}]);
+
+/**
+ * @ngdoc function
+ * @name bicenterApp.controller:ProductController
+ * @description
+ * # ProductController
+ * Controller of the bicenterApp
+ */
+angular.module('bicenterApp').controller('ProductController' ['$scope', '$http', function($scope, $http) {
 
 }]);
