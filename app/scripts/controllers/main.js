@@ -19,10 +19,10 @@ angular.module('bicenterApp').controller('DashboardController', [function() {
  * Controller of the bicenterApp
  */
 angular.module('bicenterApp').controller('ProductController', ['$scope', '$http', function($scope, $http) {
-  $scope.myData = [{name: "Moroni", age: 50},
-    {name: "Tiancum", age: 43},
-    {name: "Jacob", age: 27},
-    {name: "Nephi", age: 29},
-    {name: "Enos", age: 34}];
-  $scope.gridOptions = { data: 'myData' };
+  $scope.myData = [
+    {code: "001", name: "Product 1", shortDescription: "Short description for Product 1", price: "10.50"},
+    {code: "002", name: "Product 2", shortDescription: "Short description for Product 2", price: "100.30"},
+    {code: "003", name: "Product 3", shortDescription: "Short description for Product 3", price: "9.00"}
+  ];
+  $scope.gridProducts = { data: 'myData' };
 }]);
