@@ -8,5 +8,15 @@
  *
  * Main module of the application.
  */
-angular
-  .module('bicenterApp', []);
+var bicenterApp = angular.module('bicenterApp', ['ngRoute']);
+
+bicenterApp.config(['$routeProvider', function($routeProvider) {
+  $routeProvider.
+  when('/sample', {
+    templateUrl: 'views/partials/sample.html',
+    controller: 'MainController'
+  }).
+  otherwise({
+    redirectTo: '/sample'
+  });
+}]);

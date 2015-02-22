@@ -2,16 +2,11 @@
 
 /**
  * @ngdoc function
- * @name bicenterApp.controller:MainCtrl
+ * @name bicenterApp.controller:MainController
  * @description
- * # MainCtrl
+ * # MainController
  * Controller of the bicenterApp
  */
-angular.module('bicenterApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+angular.module('bicenterApp').controller('MainController' ['$scope', '$http', function($scope, $http) {
+
+}]);
