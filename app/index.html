@@ -7,8 +7,10 @@
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <title>BICenter - Business Intelligent Center</title>
-    <!-- Css -->
+    <!-- Bower css libraries -->
+    <link rel="stylesheet" href="bower_components/ng-grid/ng-grid.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- BiCenter css libraries -->
     <link rel="stylesheet" href="styles/bootstrap-bicenter.css">
     <link rel="stylesheet" href="styles/sb-admin.css">
   </head>
@@ -25,7 +27,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">BICENTER</a>
+              <a class="navbar-brand" href="/#/">BICENTER</a>
           </div>
           <!-- Top Menu Items -->
           <ul class="nav navbar-right top-nav">
@@ -131,10 +133,10 @@
           <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav side-nav">
-                  <li class="active">
+                  <li>
                       <a href="/#/"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                   </li>
-                  <li class="active">
+                  <li>
                       <a href="/#/products/"><i class="fa fa-fw fa-dashboard"></i> Product</a>
                   </li>
                   <li>
@@ -185,7 +187,9 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/ng-grid/build/ng-grid.min.js"></script>
+    <script src="bower_components/ng-grid/plugins/ng-grid-layout.js"></script>
 
     <!-- Angular files -->
     <script src="scripts/app.js"></script>
