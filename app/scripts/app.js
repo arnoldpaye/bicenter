@@ -17,8 +17,12 @@ bicenterApp.config(['$routeProvider', function($routeProvider) {
     controller: 'DashboardController'
   }).
   when('/products', {
-    templateUrl: 'views/partials/products.html',
-    controller: 'ProductController'
+    templateUrl: 'views/products/list.html',
+    controller: 'ProductsListController'
+  }).
+  when('/customers', {
+    templateUrl: 'views/customers/list.html',
+    controller: 'CustomersListController'
   }).
   otherwise({
     redirectTo: '/'
