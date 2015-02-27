@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-var bicenterApp = angular.module('bicenterApp', ['ngRoute', 'ngGrid']);
+var bicenterApp = angular.module('bicenterApp', ['ngRoute', 'ngResource', 'ngGrid']);
 
 bicenterApp.config(['$routeProvider', function($routeProvider) {
   $routeProvider.
